@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pyaro Manxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:wght@700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+
+<body>
+  <div class="balloon-background">
+  <div class="balloon red"></div>
+  <div class="balloon blue"></div>
+  <div class="balloon green"></div>
+  <div class="balloon pink"></div>
+  <div class="balloon yellow"></div>
+  <div class="balloon purple"></div>
+</div>
+
+  <div class="container">
+    <h1>🎉 Happy Birthday Pyaro Manxe 🎂</h1>
+  <div class="header-row">
+  <div class="profile-circle">
+    <div class="circle-inner">
+      <img src="images/prinsa1.png.jpg" class="front" alt="Real Prinsa">
+      <img src="images/prinsa9.png.jpg" class="back" alt="Gibby Prinsa">
+    </div>
+  </div>
+</div>
+    <p>Wishing you all the happiness and love in the world 💖</p>
+    <button onclick="showMessage()">Click Me 😊</button>
+    <div id="message" class="hidden">
+      <p>You are the sweetest, most amazing girl I’ve ever known 🥺💖</p>
+    </div>
+  </div>
+  
+  <!-- 🐼 Popup Modal -->
+<div class="popup-overlay hidden" id="popup">
+  <div class="popup-box">
+    <img src="images/cute-panda.png.webp" alt="Cute Panda" class="popup-image">
+    <h2>You really want to open this?</h2>
+    <div class="popup-buttons">
+      <button onclick="openRealMessage()">Yes 💖</button>
+      <button onclick="closePopup()">No 🙈</button>
+    </div>
+  </div>
+</div>
+<div id="final-message" class="hidden">
+  <div class="final-container">
+    <img src="images/panda.png.webp" alt="Birthday Girl" class="final-profile-pic">
+    <div id="today-text" class="glow-text medium-text"></div>
+    <div id="birthday-text" class="glow-text big-text"></div>
+    <div id="cheers-text" class="glow-text medium-text"></div>
+    <div class="confetti-wrapper">
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+    </div>
+   
+
+    <button id="celebrate-btn" class="hidden">lets celebrate🎉</button>
+  </div>
+</div>
+
+
+
+
+<script>
+  function showMessage() {
+    const popup = document.getElementById("popup");
+    popup.classList.remove("hidden");
+  }
+
+  function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.classList.add("hidden");
+  }
+
+   function openRealMessage() {
+    const popup = document.getElementById("popup");
+    const message = document.getElementById("message");
+    popup.classList.add("hidden");
+    message.classList.remove("hidden");
+  }
+   
+</script>
+<script src="script.js"></script>
+<!-- ❤️ Hearts Popup -->
+<div id="hearts-popup" class="hidden">
+  <div class="hearts-container">
+    <div class="hearts-box">
+      <img src="images/love.png.gif" alt="Special Picture" class="hearts-popup-image" />
+      <h2>Click all the hearts🥰</h2>
+      <div class="hearts-wrapper">
+        <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+          <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <svg class="heart" viewBox="0 0 24 24" onclick="fillHeart(this)">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+   
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+
+<!-- 🎂 Cake Celebration -->
+<!-- 🎂 Cake Celebration -->
+<!-- 🎂 Cake Celebration -->
+<div id="cake-celebration" class="hidden">
+  <div class="container">
+    <img src="images/write.png.gif" alt="Birthday Cake" class="cake-image">
+    <div id="birthday-message" class="birthday-message"></div>
+    <button id="cake-click-btn">my wishes💌</button>
+  </div>
+  <div class="falling-sprinkles"></div>
+</div>
+
+
+<!-- Gift Button -->
+<div id="gift-button-container" class="hidden">
+  <button id="your-gift-btn">Surpeise🎁</button>
+</div>
+
+<!-- Add these anywhere in your body -->
+<div id="birthday-container">
+  <div id="gift-button-container" class="hidden">
+  <button id="your-gift-btn">Surpeise🎁</button>
+</div>
+</div>
+
+<!-- 🎁 Gift Box Section -->
+<div id="gift-box-container" class="hidden">
+  <div class="gift-box">
+    <div class="gift-box-top"></div>
+    <div class="gift-box-bottom">
+      <div id="gift-card" class="hidden">
+        <div class="card-inner">
+          <p>This card carries what words can’t express… All my love is the gift for you. Today. Tomorrow. Always.💝</p>
+        </div>
+      </div>
+    </div>
+    <div class="gift-bow">
+      <div class="gift-bow-center"></div>
+      <div class="gift-bow-left"></div>
+      <div class="gift-bow-right"></div>
+    </div>
+  </div>
+  
+  <!-- Poppers that will be shown when box is opened -->
+  <div class="poppers-container"></div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Music Button -->
+<button id="music-btn" style="
+  position: fixed;
+  bottom: 80px;
+left: 50%;
+transform: translateX(-50%);
+
+  width: 40px;
+  height: 40px;
+  background: #ff6b8b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 18px;
+">▶</button>
+
+<!-- Audio Element -->
+<audio id="bg-music">
+  <source src="your_eyes.mp3" type="audio/mpeg">
+  Your browser doesn't support audio
+</audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
